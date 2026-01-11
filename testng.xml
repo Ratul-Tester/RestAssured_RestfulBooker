@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="RestAssured_RestfulBooker">
+        <classes>
+            <class name="com.restassuredrestfulbooker.PackagePractice.pp01">
+                <methods>
+                    <include name="getRequest"/>
+                    <include name="getRequest01"/>
+                </methods>
+            </class>
+            <class name="com.restassuredrestfulbooker.PackagePractice.pp02">
+                <methods>
+                    <include name="Step1"/>
+                    <include name="Step2"/>
+                    <include name="Step03"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

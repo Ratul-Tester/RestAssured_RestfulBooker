@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="C:/Users/Ratul's Lappy/IdeaProjects/RestAssured_RestfulBooker"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="12.763">
+    <properties></properties>
+
+
+
+            <testcase
+                name="getRequest01"
+                time="12.413"
+                classname="com.restassuredrestfulbooker.PackagePractice.pp01">
+            </testcase>
+            <testcase
+                name="getRequest"
+                time="0.350"
+                classname="com.restassuredrestfulbooker.PackagePractice.pp01">
+            </testcase>
+</testsuite>
