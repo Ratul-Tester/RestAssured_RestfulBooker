@@ -26,7 +26,7 @@ public class pp02 {
     }
     @Description("TC 3 Ping Test of Restful Booker")
     @Test
-    public void Step03(){
+    public void Step3(){
         RestAssured
                 .given()
                 .baseUri("https://restful-booker.herokuapp.com")

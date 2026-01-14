@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="C:/Users/Ratul's Lappy/IdeaProjects/RestAssured_RestfulBooker"
+<testsuite name="RestAssured_RestfulBooker"
            tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="4.308">
+           time="3.780">
     <properties></properties>
 
 
 
             <testcase
                 name="Step2"
-                time="2.252"
+                time="2.023"
                 classname="com.restassuredrestfulbooker.PackagePractice.pp02">
             </testcase>
             <testcase
-                name="Step03"
-                time="2.042"
+                name="Step3"
+                time="1.757"
                 classname="com.restassuredrestfulbooker.PackagePractice.pp02">
             </testcase>
             <testcase
                 name="Step1"
-                time="0.014"
+                time="0.000"
                 classname="com.restassuredrestfulbooker.PackagePractice.pp02">
             </testcase>
 </testsuite>

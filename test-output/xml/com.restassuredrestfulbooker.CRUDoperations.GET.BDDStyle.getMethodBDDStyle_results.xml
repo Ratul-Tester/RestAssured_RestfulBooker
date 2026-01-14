@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured_RestfulBooker"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.951">
+    <properties></properties>
+
+
+
+            <testcase
+                name="getMethod"
+                time="10.951"
+                classname="com.restassuredrestfulbooker.CRUDoperations.GET.BDDStyle.getMethodBDDStyle">
+            </testcase>
+</testsuite>
