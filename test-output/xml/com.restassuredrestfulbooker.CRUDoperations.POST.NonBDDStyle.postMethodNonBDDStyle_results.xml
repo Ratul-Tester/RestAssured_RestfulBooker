@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.334">
+           time="7.902">
     <properties></properties>
 
 
 
             <testcase
-                name="createBookingIdMethodPostPositiveTC"
-                time="4.334"
-                classname="com.restassuredrestfulbooker.CRUDoperations.POST.BDDStyle.postMethodBDDStyle">
+                name="postMethodNegativeTC"
+                time="7.902"
+                classname="com.restassuredrestfulbooker.CRUDoperations.POST.NonBDDStyle.postMethodNonBDDStyle">
             </testcase>
 </testsuite>
