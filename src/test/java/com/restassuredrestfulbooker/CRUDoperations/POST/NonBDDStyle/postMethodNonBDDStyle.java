@@ -3,6 +3,8 @@ package com.restassuredrestfulbooker.CRUDoperations.POST.NonBDDStyle;
 import io.qameta.allure.Description;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 
@@ -37,11 +39,15 @@ public class postMethodNonBDDStyle {
         RequestSpecification rs = RestAssured.given();
         rs.baseUri(BASE_URL);
         rs.basePath(BASE_PATH);
-        rs.contentType(ContentType.JSON);
+        rs.contentType(ContentType.JSON).log().all();
         rs.body(Valid_PAYLOAD);
-        rs.log().all();
-        rs.when().log().all().post();
-        rs.then().log().all().statusCode(200);
+
+        Response response = rs.when().log().all().post();
+        String respoString = response.asString();
+        System.out.println(respoString);
+
+        ValidatableResponse vr = response.then();
+        vr.log().all().statusCode(200);
 
 
     }
@@ -51,10 +57,14 @@ public class postMethodNonBDDStyle {
         RequestSpecification rss = RestAssured.given();
         rss.baseUri(BASE_URL);
         rss.basePath(BASE_PATH);
-        rss.contentType(ContentType.JSON);
+        rss.contentType(ContentType.JSON).log().all();
         rss.body(Invalid_PAYLOAD);
-        rss.log().all();
-        rss.when().log().all().post();
-        rss.then().log().all().statusCode(500);
+
+        Response r = rss.when().log().all().post();
+        String respoString = r.asString();
+        System.out.println(respoString);
+
+        ValidatableResponse vr = r.then();
+        vr.log().all().statusCode(500);
     }
 }

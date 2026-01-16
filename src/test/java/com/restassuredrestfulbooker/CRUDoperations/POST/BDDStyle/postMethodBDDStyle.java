@@ -40,8 +40,8 @@ public class postMethodBDDStyle {
                 .baseUri(BASE_URL)
                 .basePath(BASE_PATH)
                 .contentType(ContentType.JSON)
-                .body(Valid_PAYLOAD)
                 .log().all()
+                .body(Valid_PAYLOAD)
 
                 .when().log().all().post()
 
@@ -56,8 +56,9 @@ public class postMethodBDDStyle {
                 .baseUri(BASE_URL)
                 .basePath(BASE_PATH)
                 .contentType(ContentType.JSON)
-                .body(Invalid_PAYLOAD)
                 .log().all()
+                .body(Invalid_PAYLOAD)
+
 
                 .when().log().all().post()
 
