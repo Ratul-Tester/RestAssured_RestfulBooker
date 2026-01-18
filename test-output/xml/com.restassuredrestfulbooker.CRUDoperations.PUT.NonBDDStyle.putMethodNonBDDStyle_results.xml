@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured_RestfulBooker"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="11.971">
+    <properties></properties>
+
+
+
+            <testcase
+                name="putMethodNegativeTCNonBDDStyle"
+                time="9.753"
+                classname="com.restassuredrestfulbooker.CRUDoperations.PUT.NonBDDStyle.putMethodNonBDDStyle">
+            </testcase>
+            <testcase
+                name="putMethodPositiveTCNonBDDStyle"
+                time="2.218"
+                classname="com.restassuredrestfulbooker.CRUDoperations.PUT.NonBDDStyle.putMethodNonBDDStyle">
+            </testcase>
+</testsuite>

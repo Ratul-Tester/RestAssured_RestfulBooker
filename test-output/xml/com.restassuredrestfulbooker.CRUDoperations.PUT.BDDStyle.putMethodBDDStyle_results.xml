@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="11.927">
+           time="12.849">
     <properties></properties>
 
 
 
             <testcase
-                name="getMethod"
-                time="11.927"
-                classname="com.restassuredrestfulbooker.CRUDoperations.GET.BDDStyle.getMethodBDDStyle">
+                name="updateBookingPutMethodNegativeTC"
+                time="12.849"
+                classname="com.restassuredrestfulbooker.CRUDoperations.PUT.BDDStyle.putMethodBDDStyle">
             </testcase>
 </testsuite>

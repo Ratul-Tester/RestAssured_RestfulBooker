@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="RestAssured_RestfulBooker">
+<suite name="All POST Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="restassuredrestfulbooker/CRUDoperations/POST">
         <classes>
             <class name="com.restassuredrestfulbooker.CRUDoperations.GET.BDDStyle.getMethodBDDStyle">
                 <methods>
@@ -20,22 +21,10 @@
                     <include name="createBookingIdMethodPostNegativeTC"/>
                 </methods>
             </class>
-            <class name="com.restassuredrestfulbooker.PackagePractice.pp01">
+            <class name="com.restassuredrestfulbooker.CRUDoperations.POST.NonBDDStyle.postMethodNonBDDStyle">
                 <methods>
-                    <include name="getRequest"/>
-                    <include name="getRequest01"/>
-                </methods>
-            </class>
-            <class name="com.restassuredrestfulbooker.PackagePractice.pp02">
-                <methods>
-                    <include name="Step1"/>
-                    <include name="Step2"/>
-                    <include name="Step3"/>
-                </methods>
-            </class>
-            <class name="com.restassuredrestfulbooker.RestAssuredPackage.ra02">
-                <methods>
-                    <include name="demo5"/>
+                    <include name="postMethodPositiveTC"/>
+                    <include name="postMethodNegativeTC"/>
                 </methods>
             </class>
         </classes>

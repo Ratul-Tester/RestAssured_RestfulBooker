@@ -12,7 +12,7 @@ public class getMethodBDDStyle {
         RestAssured
                 .given()
                 .baseUri("https://restful-booker.herokuapp.com")
-                .basePath("/booking").log().all()
+                .basePath("/booking"+"/"+"1206").log().all()
 
                 .when().log().all().get()
 
