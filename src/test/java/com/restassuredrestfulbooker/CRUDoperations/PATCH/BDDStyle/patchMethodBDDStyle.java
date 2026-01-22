@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 
 public class patchMethodBDDStyle {
 
-    String bookingid = "2472";
-    String token = "1d3863a312c9d9b";
+    String bookingid = "481";
+    String token = "18e4f985a0d487a";
     String Valid_Payload = "{\n" +
             "    \"firstname\" : \"Lala\",\n" +
             "    \"lastname\" : \"Na\"\n" +

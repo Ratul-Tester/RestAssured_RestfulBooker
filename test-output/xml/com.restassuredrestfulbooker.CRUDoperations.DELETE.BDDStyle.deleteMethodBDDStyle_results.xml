@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured_RestfulBooker"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="14.889">
+    <properties></properties>
+
+
+
+            <testcase
+                name="deleteMethodBDDStylePositiveTC"
+                time="12.562"
+                classname="com.restassuredrestfulbooker.CRUDoperations.DELETE.BDDStyle.deleteMethodBDDStyle">
+            </testcase>
+            <testcase
+                name="checkDeleteMethodBDDStylePostDeletion"
+                time="2.327"
+                classname="com.restassuredrestfulbooker.CRUDoperations.DELETE.BDDStyle.deleteMethodBDDStyle">
+            </testcase>
+</testsuite>

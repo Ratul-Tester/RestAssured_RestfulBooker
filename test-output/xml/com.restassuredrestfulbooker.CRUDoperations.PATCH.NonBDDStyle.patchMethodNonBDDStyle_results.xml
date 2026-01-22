@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="12.621">
+           time="9.115">
     <properties></properties>
 
 
 
             <testcase
-                name="patchMethodPositiveTC"
-                time="12.621"
-                classname="com.restassuredrestfulbooker.CRUDoperations.PATCH.BDDStyle.patchMethodBDDStyle">
+                name="patchMethodNonBDDStylePositiveTC"
+                time="9.115"
+                classname="com.restassuredrestfulbooker.CRUDoperations.PATCH.NonBDDStyle.patchMethodNonBDDStyle">
             </testcase>
 </testsuite>
