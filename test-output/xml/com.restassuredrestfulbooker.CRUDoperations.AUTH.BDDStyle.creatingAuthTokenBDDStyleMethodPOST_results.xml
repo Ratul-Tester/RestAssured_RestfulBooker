@@ -12,6 +12,6 @@
             <testcase
                 name="creatingAuth"
                 time="12.581"
-                classname="com.restassuredrestfulbooker.CRUDoperations.AUTH.BDDStyle.creatingAuthTokenBDDStyleMethodPOST">
+                classname="BDDStyle.com.restassuredrestfulbooker.CRUDoperations.a.AUTH.creatingAuthTokenBDDStyleMethodPOST">
             </testcase>
 </testsuite>

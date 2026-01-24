@@ -12,6 +12,6 @@
             <testcase
                 name="generating_Auth"
                 time="17.466"
-                classname="com.restassuredrestfulbooker.CRUDoperations.AUTH.NonBDDStyle.creatingAuthTokenNonBDDStyleMethodPOST">
+                classname="NonBDDStyle.com.restassuredrestfulbooker.CRUDoperations.a.AUTH.creatingAuthTokenNonBDDStyleMethodPOST">
             </testcase>
 </testsuite>

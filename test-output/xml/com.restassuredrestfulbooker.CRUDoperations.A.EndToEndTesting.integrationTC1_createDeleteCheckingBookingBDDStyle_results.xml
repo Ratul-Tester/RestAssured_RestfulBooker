@@ -12,21 +12,21 @@
             <testcase
                 name="deleteMethodBDDStylePositiveTC"
                 time="2.808"
-                classname="com.restassuredrestfulbooker.CRUDoperations.A.EndToEndTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
+                classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
             </testcase>
             <testcase
                 name="checkDeletedBookingGETMethodBDDStylePositiveTC"
                 time="2.230"
-                classname="com.restassuredrestfulbooker.CRUDoperations.A.EndToEndTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
+                classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
             </testcase>
             <testcase
                 name="createBookingIdMethodPostPositiveTC"
                 time="2.377"
-                classname="com.restassuredrestfulbooker.CRUDoperations.A.EndToEndTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
+                classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
             </testcase>
             <testcase
                 name="generatingAuth"
                 time="17.443"
-                classname="com.restassuredrestfulbooker.CRUDoperations.A.EndToEndTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
+                classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
             </testcase>
 </testsuite>
