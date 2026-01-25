@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured_RestfulBooker"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.915">
+    <properties></properties>
+
+
+
+            <testcase
+                name="partiallyUpdateBooking"
+                time="2.915"
+                classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC2_createPartiallyUpdateDeleteNonBDDStyle">
+            </testcase>
+</testsuite>
