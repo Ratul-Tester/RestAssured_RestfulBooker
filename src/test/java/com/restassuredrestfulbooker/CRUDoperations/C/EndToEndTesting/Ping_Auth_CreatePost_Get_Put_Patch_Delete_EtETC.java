@@ -98,9 +98,86 @@ public class Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC {
 
     @Description("Checking the created booking with booking id")
     @Test(priority = 3)
-    public void getBookingid(){
-
+    public void getBookingInfo(){
+        rs.baseUri(Base_URL)
+                .basePath(Base_PATH+"/"+bookingid)
+                .log().all()
+                .when().get()
+                .then().log().all().statusCode(200);
     }
 
+    @Description("Booking will be updated and stored in bookingid variable")
+    @Test(priority = 4)
+    public void updateBooking(){
+        rs.baseUri(Base_URL)
+                .basePath(Base_PATH+"/"+bookingid)
+                .contentType(ContentType.JSON)
+                .cookie("token",token)
+                .body(Payload_UpdateBooking)
+                .log().all();
 
+        response = rs.when().put();
+
+        validatableResponse = response.then().log().all().statusCode(200);
+
+        //bookingid = response.jsonPath().getString("bookingid");
+    }
+
+    @Description("Checking the updated booking with booking id")
+    @Test(priority = 5)
+    public void getUpdatedBookingInfo(){
+        rs.baseUri(Base_URL)
+                .basePath(Base_PATH+"/"+bookingid)
+                .log().all()
+                .when().get()
+                .then().log().all().statusCode(200);
+    }
+
+    @Description("Booking will be partially updated and stored in bookingid variable")
+    @Test(priority = 6)
+    public void partiallyUpdateBooking(){
+        rs.baseUri(Base_URL)
+                .basePath(Base_PATH+"/"+bookingid)
+                .contentType(ContentType.JSON)
+                .cookie("token",token)
+                .body(Payload_PatchBooking)
+                .log().all();
+
+        response = rs.when().patch();
+
+        validatableResponse = response.then().log().all().statusCode(200);
+
+        //bookingid = response.jsonPath().getString("bookingid");
+    }
+
+    @Description("Checking the partially updated booking info with booking id")
+    @Test(priority = 7)
+    public void getPartiallyUpdatedBookingInfo(){
+        rs.baseUri(Base_URL)
+                .basePath(Base_PATH+"/"+bookingid)
+                .log().all()
+                .when().get()
+                .then().log().all().statusCode(200);
+    }
+
+    @Description("Deleting the partially updated booking with booking id & token")
+    @Test(priority = 8)
+    public void deleteBooking(){
+        rs.baseUri(Base_URL)
+                .basePath(Base_PATH+"/"+bookingid)
+                .cookie("token",token)
+                .log().all()
+                .when().delete()
+                .then().log().all().statusCode(201);
+    }
+
+    @Description("Checking the partially updated booking info with booking id")
+    @Test(priority = 9)
+    public void getDeletedBookingInfo(){
+        rs.baseUri(Base_URL)
+                .basePath(Base_PATH+"/"+bookingid)
+                .log().all()
+                .when().get()
+                .then().log().all().statusCode(404);
+    }
 }
