@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="restassuredrestfulbooker/CRUDoperations"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="4.140">
+    <properties></properties>
+
+
+
+            <testcase
+                name="createBookingIdMethodPostPositiveTC"
+                time="2.072"
+                classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.POST.BDDStyle.postMethodBDDStyle">
+            </testcase>
+            <testcase
+                name="createBookingIdMethodPostNegativeTC"
+                time="2.068"
+                classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.POST.BDDStyle.postMethodBDDStyle">
+            </testcase>
+</testsuite>

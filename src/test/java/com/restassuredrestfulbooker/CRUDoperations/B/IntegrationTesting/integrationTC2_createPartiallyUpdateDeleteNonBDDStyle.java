@@ -70,7 +70,7 @@ public class integrationTC2_createPartiallyUpdateDeleteNonBDDStyle {
         System.out.println("BookingId Stored as : "+bookingid);
     }
 
-    @Test
+    @Test(priority = 0)
     public void partiallyUpdateBooking(){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path+"/"+bookingid);
@@ -83,6 +83,19 @@ public class integrationTC2_createPartiallyUpdateDeleteNonBDDStyle {
         vr = r.then().log().all().statusCode(200);
         String responseFirstname = r.then().extract().path("firstname");
         Assert.assertEquals(responseFirstname,"James");
+    }
+
+    @Test(priority = 1)
+    public void deleteBooking(){
+        rs.baseUri(Base_Url);
+        rs.basePath(Base_Path+"/"+bookingid);
+        rs.contentType(ContentType.JSON);
+        rs.cookie("token",token);
+
+        r = rs.when().delete();
+
+        vr = r.then().log().all().statusCode(201);
+
     }
 
 }
