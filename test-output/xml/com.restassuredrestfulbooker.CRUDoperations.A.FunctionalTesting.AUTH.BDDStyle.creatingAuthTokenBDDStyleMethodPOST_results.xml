@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="restassuredrestfulbooker/CRUDoperations"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.115">
+    <properties></properties>
+
+
+
+            <testcase
+                name="creatingAuth"
+                time="3.115"
+                classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.AUTH.BDDStyle.creatingAuthTokenBDDStyleMethodPOST">
+            </testcase>
+</testsuite>

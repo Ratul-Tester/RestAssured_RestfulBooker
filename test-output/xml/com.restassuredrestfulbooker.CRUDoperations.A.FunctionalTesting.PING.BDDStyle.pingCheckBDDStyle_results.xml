@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="restassuredrestfulbooker/CRUDoperations"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.248">
+    <properties></properties>
+
+
+
+            <testcase
+                name="pingCheckGETMethod"
+                time="2.248"
+                classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.PING.BDDStyle.pingCheckBDDStyle">
+            </testcase>
+</testsuite>

@@ -1,32 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All POST Test Suite">
+<suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="restassuredrestfulbooker/CRUDoperations/POST">
-        <classes>
-            <class name="com.restassuredrestfulbooker.CRUDoperations.GET.BDDStyle.getMethodBDDStyle">
-                <methods>
-                    <include name="getMethod"/>
-                </methods>
-            </class>
-            <class name="com.restassuredrestfulbooker.CRUDoperations.GET.NonBDDStyle.getMethodNonBDDStyle">
-                <methods>
-                    <include name="getMethodPositiveTC"/>
-                    <include name="getMethodNegativeTC"/>
-                </methods>
-            </class>
-            <class name="com.restassuredrestfulbooker.CRUDoperations.POST.BDDStyle.postMethodBDDStyle">
-                <methods>
-                    <include name="createBookingIdMethodPostPositiveTC"/>
-                    <include name="createBookingIdMethodPostNegativeTC"/>
-                </methods>
-            </class>
-            <class name="com.restassuredrestfulbooker.CRUDoperations.POST.NonBDDStyle.postMethodNonBDDStyle">
-                <methods>
-                    <include name="postMethodPositiveTC"/>
-                    <include name="postMethodNegativeTC"/>
-                </methods>
-            </class>
-        </classes>
+          name="restassuredrestfulbooker/CRUDoperations">
+        <packages>
+            <package name="com.restassuredrestfulbooker.*"></package>
+        </packages>
     </test>
 </suite>

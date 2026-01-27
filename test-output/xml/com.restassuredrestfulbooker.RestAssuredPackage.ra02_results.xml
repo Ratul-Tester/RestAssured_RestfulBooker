@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RestAssured_RestfulBooker"
+<testsuite name="restassuredrestfulbooker/CRUDoperations"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="0.016">
+           time="0.008">
     <properties></properties>
 
 
 
             <testcase
                 name="demo5"
-                time="0.016"
+                time="0.008"
                 classname="com.restassuredrestfulbooker.RestAssuredPackage.ra02">
             </testcase>
 </testsuite>

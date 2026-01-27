@@ -1,21 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RestAssured_RestfulBooker"
+<testsuite name="restassuredrestfulbooker/CRUDoperations"
            tests="10"
            failures="0"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="14.205">
+=======
+           time="22.320">
+>>>>>>> b4e00c0647b278a52fb954289e69914e2733c206
     <properties></properties>
 
 
 
             <testcase
+<<<<<<< HEAD
                 name="getUpdatedBookingInfo"
                 time="1.237"
+=======
+                name="getPartiallyUpdatedBookingInfo"
+                time="2.268"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC">
+            </testcase>
+            <testcase
+                name="tokenGenerating"
+                time="2.205"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC">
+            </testcase>
+            <testcase
+                name="getBookingInfo"
+                time="2.202"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC">
+            </testcase>
+            <testcase
+                name="getDeletedBookingInfo"
+                time="2.272"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC">
+            </testcase>
+            <testcase
+                name="partiallyUpdateBooking"
+                time="2.156"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC">
+            </testcase>
+            <testcase
+                name="createBooking"
+                time="2.209"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC">
+            </testcase>
+            <testcase
+                name="getUpdatedBookingInfo"
+                time="2.135"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC">
+            </testcase>
+            <testcase
+                name="updateBooking"
+                time="2.347"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC">
+            </testcase>
+            <testcase
+                name="deleteBooking"
+                time="1.956"
+>>>>>>> b4e00c0647b278a52fb954289e69914e2733c206
                 classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC">
             </testcase>
             <testcase
                 name="pingCheck"
+<<<<<<< HEAD
                 time="2.407"
                 classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC">
             </testcase>
@@ -57,6 +107,9 @@
             <testcase
                 name="getDeletedBookingInfo"
                 time="1.298"
+=======
+                time="2.570"
+>>>>>>> b4e00c0647b278a52fb954289e69914e2733c206
                 classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.Ping_Auth_CreatePost_Get_Put_Patch_Delete_EtETC">
             </testcase>
 </testsuite>
