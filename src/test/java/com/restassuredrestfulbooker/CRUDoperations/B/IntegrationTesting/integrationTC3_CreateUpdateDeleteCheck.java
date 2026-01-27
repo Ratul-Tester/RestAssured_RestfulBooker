@@ -29,7 +29,7 @@ public class integrationTC3_CreateUpdateDeleteCheck {
             "}";
     String Payload_Update = "{\n" +
             "    \"firstname\" : \"James\",\n" +
-            "    \"lastname\" : \"Brown\",\n" +
+            "    \"lastname\" : \"Smith\",\n" +
             "    \"totalprice\" : 111,\n" +
             "    \"depositpaid\" : true,\n" +
             "    \"bookingdates\" : {\n" +
@@ -47,7 +47,7 @@ public class integrationTC3_CreateUpdateDeleteCheck {
     ValidatableResponse vr;
 
     @BeforeTest
-    public void generateToken(){
+    public void generateToken() {
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path_Auth);
         rs.contentType(ContentType.JSON);
@@ -58,48 +58,69 @@ public class integrationTC3_CreateUpdateDeleteCheck {
         vr = r.then().log().all().statusCode(200);
 
         token = r.then().extract().path("token");
-        System.out.println("Token is : "+token);
+        System.out.println("Token is : " + token);
         Assert.assertNotNull(token);
     }
 
     @BeforeTest
-    public void generateBookingId(){
+    public void generateBookingId() {
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path);
         rs.contentType(ContentType.JSON);
         rs.body(Payload);
+        rs.log().all();
 
         r = rs.when().log().all().post();
 
         vr = r.then().log().all().statusCode(200);
 
         bookingid = r.then().extract().path("bookingid");
-        System.out.println("Booking Id is : "+bookingid);
+        System.out.println("Booking Id is : " + bookingid);
         Assert.assertNotNull(bookingid);
+
+        String responseFirstName = r.then().extract().path("booking.firstname");
+        System.out.println("FIRST NAME ::" + responseFirstName);
+        Assert.assertEquals(responseFirstName,"Jim");
+
+        String responselastname = r.then().extract().path("booking.lastname");
+        Assert.assertEquals(responselastname,"Brown");
+
+        Integer responsetotalprice = r.then().extract().path("booking.totalprice");
+        Assert.assertEquals(responsetotalprice,111);
+
+        Boolean responsedepositpaid = r.then().extract().path("booking.depositpaid");
+        Assert.assertEquals(responsedepositpaid,true);
+
+        Object responsebookingdates = r.then().extract().path("booking.bookingdates.checkin");
+        System.out.println("RESPONSE BOOKING DATES :::: "+responsebookingdates);
+        Assert.assertEquals(responsebookingdates,"2018-01-01");
+
+        String responseadditioonalneeds = r.then().extract().path("booking.additionalneeds");
+        Assert.assertEquals(responseadditioonalneeds,"Breakfast");
     }
 
     @Test(priority = 1)
-    public void updateBooking(){
+    public void updateBooking() {
         rs.baseUri(Base_Url);
-        rs.basePath(Base_Path+"/"+bookingid);
+        rs.basePath(Base_Path + "/" + bookingid);
         rs.contentType(ContentType.JSON);
-        rs.cookie("token",token);
+        rs.cookie("token", token);
         rs.body(Payload_Update);
 
         r = rs.when().log().all().put();
 
         vr = r.then().log().all().statusCode(200);
         String responseFirstName = r.then().extract().path("firstname");
-        Assert.assertEquals(responseFirstName,"James");
+        Assert.assertEquals(responseFirstName, "James");
     }
 
 
     @Test(priority = 2)
-    public void deleteBooking(){
+    public void deleteBooking() {
         rs.baseUri(Base_Url);
-        rs.basePath(Base_Path+"/"+bookingid);
+        rs.basePath(Base_Path + "/" + bookingid);
         rs.contentType(ContentType.JSON);
-        rs.cookie("token",token);
+        rs.cookie("token", token);
 
         r = rs.when().log().all().delete();
 
