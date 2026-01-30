@@ -155,7 +155,7 @@ public class testFullEndToEndTC {
     }
 
     @Test
-    public void testPartialUpdateBooking (){
+    public void testPartialUpdatedBooking (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path+"/"+bookingid);
 
@@ -191,5 +191,80 @@ public class testFullEndToEndTC {
         assertThat(tcbAdditionalNeeds).containsIgnoringCase("breakfast");
     }
 
+    @Test
+    public void testFullUpdate (){
+        rs.baseUri(Base_Url);
+        rs.basePath(Base_Path+"/"+bookingid);
+        rs.contentType(ContentType.JSON);
+        rs.cookie("token",token);
+        rs.body(Full_Update_Payload);
 
+        r = rs.when().log().all().put();
+
+        vr = r.then().log().all().statusCode(200);
+
+        String tfuResponse = r.asString();
+
+        JsonPath jsonPath = new JsonPath(tfuResponse);
+
+        String tfuFirstName = jsonPath.getString("firstname");
+        assertThat(tfuFirstName).contains("King").isNotBlank().isNotNull();
+        String tfuLastName = jsonPath.getString("lastname");
+        assertThat(tfuLastName).contains("Crown").isNotNull().isNotBlank();
+    }
+
+    @Test
+    public void testFullyUpdatedBooking (){
+        rs.baseUri(Base_Url);
+        rs.basePath(Base_Path+"/"+bookingid);
+
+        r = rs.when().log().all().get();
+
+        vr = r.then().log().all().statusCode(200);
+
+        String tfuResponse = r.asString();
+        JsonPath jsonPath = new JsonPath(tfuResponse);
+
+        String tfuFirstName = jsonPath.getString("firstname");
+        assertThat(tfuFirstName).containsIgnoringCase("King");
+
+        String tfuLastName = jsonPath.getString("lastname");
+        assertThat(tfuLastName).containsIgnoringCase("Crown");
+
+        Integer tfuTotalPrice = jsonPath.getInt("totalprice");
+        assertThat(tfuTotalPrice).isEqualTo(777).isNotNull().isNotNegative().isNotZero();
+
+        Boolean tfuDepositPaid = jsonPath.getBoolean("depositpaid");
+        assertThat(tfuDepositPaid).isTrue();
+
+        Object tfubookingDates = jsonPath.getJsonObject("bookingdates");
+        assertThat(tfubookingDates).isNotNull();
+
+        String tfucheckin = jsonPath.getJsonObject("bookingdates.checkin");
+        assertThat(tfucheckin).isEqualTo("2018-01-01");
+
+        String tfucheckout = jsonPath.getJsonObject("bookingdates.checkout");
+        assertThat(tfucheckout).isEqualTo("2019-01-01");
+
+        String tfuAdditionalNeeds = jsonPath.getString("additionalneeds");
+        assertThat(tfuAdditionalNeeds).containsIgnoringCase("breakfast");
+    }
+
+    @Test
+    public void testDeleteBooking (){
+        rs.baseUri(Base_Url);
+        rs.basePath(Base_Path+"/"+bookingid);
+        rs.contentType(ContentType.JSON);
+        rs.cookie("token",token);
+
+        r = rs.when().log().all().delete();
+
+        vr = r.then().log().all().statusCode(201);
+
+        //token = r.then().extract().path("token");
+
+        String deleteResponse = r.asString();
+        JsonPath jsonPath = new JsonPath(deleteResponse);
+        System.out.println(jsonPath);
+    }
 }
