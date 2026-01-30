@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="RestAssured_RestfulBooker"
-           tests="3"
+           tests="5"
            failures="0"
            errors="0"
            skipped="0"
-           time="6.607">
+           time="23.093">
     <properties></properties>
 
 
 
             <testcase
-                name="testBookingToGetBookingId"
-                time="1.733"
-                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
-            </testcase>
-            <testcase
                 name="testAuthToGetToken"
-                time="3.199"
+                time="12.948"
                 classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
             </testcase>
             <testcase
                 name="testCreatedBooking"
-                time="1.675"
+                time="2.707"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
+            </testcase>
+            <testcase
+                name="testPartialUpdate"
+                time="2.306"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
+            </testcase>
+            <testcase
+                name="testBookingToGetBookingId"
+                time="2.560"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
+            </testcase>
+            <testcase
+                name="testPartialUpdateBooking"
+                time="2.572"
                 classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
             </testcase>
 </testsuite>

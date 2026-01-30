@@ -153,4 +153,43 @@ public class testFullEndToEndTC {
         String tpuLastName = jsonPath.getString("lastname");
         assertThat(tpuLastName).contains("Brown").isNotNull().isNotBlank();
     }
+
+    @Test
+    public void testPartialUpdateBooking (){
+        rs.baseUri(Base_Url);
+        rs.basePath(Base_Path+"/"+bookingid);
+
+        r = rs.when().log().all().get();
+
+        vr = r.then().log().all().statusCode(200);
+
+        String tcbResponse = r.asString();
+        JsonPath jsonPath = new JsonPath(tcbResponse);
+
+        String tcbFirstName = jsonPath.getString("firstname");
+        assertThat(tcbFirstName).containsIgnoringCase("jAmEs");
+
+        String tcbLastName = jsonPath.getString("lastname");
+        assertThat(tcbLastName).containsIgnoringCase("Brown");
+
+        Integer tcbTotalPrice = jsonPath.getInt("totalprice");
+        assertThat(tcbTotalPrice).isNotNull().isNotNegative().isNotZero();
+
+        Boolean tcbDepositPaid = jsonPath.getBoolean("depositpaid");
+        assertThat(tcbDepositPaid).isTrue();
+
+        Object tcbbookingDates = jsonPath.getJsonObject("bookingdates");
+        assertThat(tcbbookingDates).isNotNull();
+
+        String tcbcheckin = jsonPath.getJsonObject("bookingdates.checkin");
+        assertThat(tcbcheckin).isEqualTo("2018-01-01");
+
+        String tcbcheckout = jsonPath.getJsonObject("bookingdates.checkout");
+        assertThat(tcbcheckout).isEqualTo("2019-01-01");
+
+        String tcbAdditionalNeeds = jsonPath.getString("additionalneeds");
+        assertThat(tcbAdditionalNeeds).containsIgnoringCase("breakfast");
+    }
+
+
 }
