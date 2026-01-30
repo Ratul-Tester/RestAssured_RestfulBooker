@@ -2,6 +2,7 @@ package com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.AUTH.BDD
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 public class creatingAuthTokenBDDStyleMethodPOST {
@@ -11,6 +12,7 @@ public class creatingAuthTokenBDDStyleMethodPOST {
             "    \"username\" : \"admin\",\n" +
             "    \"password\" : \"password123\"\n" +
             "}";
+    String token;
 
     @Test
     public void creatingAuth(){

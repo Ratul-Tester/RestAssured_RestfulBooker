@@ -112,6 +112,8 @@ public class integrationTC3_CreateUpdateDeleteCheck {
         vr = r.then().log().all().statusCode(200);
         String responseFirstName = r.then().extract().path("firstname");
         Assert.assertEquals(responseFirstName, "James");
+
+
     }
 
 

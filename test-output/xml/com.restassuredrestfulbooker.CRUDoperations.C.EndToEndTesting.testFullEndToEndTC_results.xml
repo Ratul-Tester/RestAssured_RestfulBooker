@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="2.930">
+           time="2.733">
     <properties></properties>
 
 
 
             <testcase
-                name="generating_Auth"
-                time="2.930"
-                classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.AUTH.NonBDDStyle.creatingAuthTokenNonBDDStyleMethodPOST">
+                name="testAuthToGetToken"
+                time="2.733"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
             </testcase>
 </testsuite>
