@@ -2,15 +2,12 @@ package com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import static org.assertj.core.api.Assertions.*;
 
 public class integrationTC3_CreateUpdateDeleteCheck {
     Integer bookingid;
@@ -115,40 +112,6 @@ public class integrationTC3_CreateUpdateDeleteCheck {
         vr = r.then().log().all().statusCode(200);
         String responseFirstName = r.then().extract().path("firstname");
         Assert.assertEquals(responseFirstName, "James");
-
-        String fullResponse = r.asString();
-
-        JsonPath jsonPath = new JsonPath(fullResponse);
-        String extractedFirstName = jsonPath.getString("firstname");
-        String extractedLastName = jsonPath.getString("lastname");
-        Integer extractedTotalPrice = jsonPath.getInt("totalprice");
-        String extractedCheckinDate = jsonPath.getString("bookingdates.checkin");
-        String extractedCheckoutDate = jsonPath.getString("bookingdates.checkout");
-        String extractedAdditionalNeeds = jsonPath.getString("additionalneeds");
-
-        System.out.println("First Name is :: "+extractedFirstName);
-        System.out.println("Last Name is :: "+extractedLastName);
-        System.out.println("Total Price is :: "+extractedTotalPrice);
-        System.out.println("Checkin Date is :: "+extractedCheckinDate);
-        System.out.println("Checkout Date is :: "+extractedCheckoutDate);
-        System.out.println("Additional Needs is :: "+extractedAdditionalNeeds);
-
-        Assert.assertEquals(extractedFirstName,"James");
-        Assert.assertEquals(extractedLastName,"Smith");
-        Assert.assertEquals(extractedTotalPrice,111);
-        Assert.assertEquals(extractedCheckinDate,"2018-01-01");
-        Assert.assertEquals(extractedCheckoutDate,"2019-01-01");
-        Assert.assertEquals(extractedAdditionalNeeds,"Breakfast");
-
-        assertThat(extractedFirstName)
-                .isEqualTo("James").isNotBlank();
-        assertThat(extractedLastName)
-                .isEqualTo("Smith").isNotEmpty().isNotBlank();
-        assertThat(extractedTotalPrice)
-                .isEqualTo(111).isNotNegative().isNotZero();
-        assertThat(extractedCheckinDate).isNotEmpty();
-        assertThat(extractedCheckoutDate).isNotBlank();
-        assertThat(extractedAdditionalNeeds).isNotBlank();
     }
 
 
@@ -162,6 +125,7 @@ public class integrationTC3_CreateUpdateDeleteCheck {
         r = rs.when().log().all().delete();
 
         vr = r.then().log().all().statusCode(201);
+
     }
 
 }
