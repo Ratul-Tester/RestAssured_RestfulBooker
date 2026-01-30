@@ -47,13 +47,13 @@
       <scope>test</scope>
     </dependency>
 
-<!--    &lt;!&ndash; Source: https://mvnrepository.com/artifact/org.assertj/assertj-core &ndash;&gt;-->
-<!--    <dependency>-->
-<!--      <groupId>org.assertj</groupId>-->
-<!--      <artifactId>assertj-core</artifactId>-->
-<!--      <version>4.0.0-M1</version>-->
-<!--      <scope>test</scope>-->
-<!--    </dependency>-->
+    <!-- Source: https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.25.1</version>
+      <scope>test</scope>
+    </dependency>
 
 
   </dependencies>
