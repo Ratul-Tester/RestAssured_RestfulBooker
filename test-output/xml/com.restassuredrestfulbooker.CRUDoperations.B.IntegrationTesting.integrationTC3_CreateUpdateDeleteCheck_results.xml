@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.120">
+           time="6.629">
     <properties></properties>
 
 
 
             <testcase
-                name="deleteBooking"
-                time="2.053"
+                name="updateBooking"
+                time="3.933"
                 classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC3_CreateUpdateDeleteCheck">
             </testcase>
             <testcase
-                name="updateBooking"
-                time="2.067"
+                name="deleteBooking"
+                time="2.696"
                 classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC3_CreateUpdateDeleteCheck">
             </testcase>
 </testsuite>
