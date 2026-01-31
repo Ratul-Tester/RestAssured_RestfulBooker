@@ -6,6 +6,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import net.bytebuddy.agent.builder.AgentBuilder;
 import org.testng.annotations.Test;
 
 import java.util.Date;
@@ -54,7 +55,7 @@ public class testFullEndToEndTC {
     Response r;
     ValidatableResponse vr;
 
-    @Test
+    @Test(groups = {"Authentication"}, priority = 1)
     public void testAuthToGetToken (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path_Auth);
@@ -74,7 +75,7 @@ public class testFullEndToEndTC {
         assertThat(token).isNotNull().isAlphanumeric();
     }
 
-    @Test
+    @Test(groups = {"BookingId"}, priority = 2)
     public void testBookingToGetBookingId (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path);
@@ -132,7 +133,7 @@ public class testFullEndToEndTC {
         assertThat(tcbAdditionalNeeds).containsIgnoringCase("breakfast");
     }
 
-    @Test
+    @Test(dependsOnGroups = {"Authentication","BookingId"})
     public void testPartialUpdate (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path+"/"+bookingid);
@@ -191,7 +192,7 @@ public class testFullEndToEndTC {
         assertThat(tcbAdditionalNeeds).containsIgnoringCase("breakfast");
     }
 
-    @Test
+    @Test(dependsOnGroups = {"Authentication.BookingId"}, dependsOnMethods = "testPartialUpdate")
     public void testFullUpdate (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path+"/"+bookingid);
@@ -250,7 +251,7 @@ public class testFullEndToEndTC {
         assertThat(tfuAdditionalNeeds).containsIgnoringCase("breakfast");
     }
 
-    @Test
+    @Test(dependsOnGroups = {"Authentication.BookingId"}, dependsOnMethods = "testFullUpdate")
     public void testDeleteBooking (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path+"/"+bookingid);
@@ -265,6 +266,20 @@ public class testFullEndToEndTC {
 
         String deleteResponse = r.asString();
         JsonPath jsonPath = new JsonPath(deleteResponse);
-        System.out.println(jsonPath);
+        System.out.println("This is the response, when deleted existing Booking :: "+jsonPath);
+    }
+
+    @Test
+    public void testDeletedBookingInfo () {
+        rs.baseUri(Base_Url);
+        rs.basePath(Base_Path + "/" + bookingid);
+
+        r = rs.when().log().all().get();
+
+        vr = r.then().log().all().statusCode(404);
+
+        String tdbResponse = r.asString();
+        JsonPath jsonPath = new JsonPath(tdbResponse);
+        System.out.println("This is the Response, when trying to get the Deleted Booking Info :: "+jsonPath);
     }
 }
