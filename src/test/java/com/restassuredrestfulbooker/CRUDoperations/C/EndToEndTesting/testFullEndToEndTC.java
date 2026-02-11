@@ -55,7 +55,7 @@ public class testFullEndToEndTC {
     Response r;
     ValidatableResponse vr;
 
-    @Test(groups = {"Authentication"}, priority = 1)
+    @Test(groups = {"PreExecution"}, priority = 1)
     public void testAuthToGetToken (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path_Auth);
@@ -75,7 +75,7 @@ public class testFullEndToEndTC {
         assertThat(token).isNotNull().isAlphanumeric();
     }
 
-    @Test(groups = {"BookingId"}, priority = 2)
+    @Test(groups = {"PreExecution"}, priority = 2)
     public void testBookingToGetBookingId (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path);
@@ -96,7 +96,7 @@ public class testFullEndToEndTC {
         assertThat(bookingid).isNotNull().isBetween(0,9999);
     }
 
-    @Test
+    @Test(dependsOnMethods = "testBookingToGetBookingId", priority = 3)
     public void testCreatedBooking (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path+"/"+bookingid);
@@ -112,7 +112,7 @@ public class testFullEndToEndTC {
         assertThat(tcbFirstName).containsIgnoringCase("jIM");
 
         String tcbLastName = jsonPath.getString("lastname");
-        assertThat(tcbLastName).containsIgnoringCase("Brown");
+        assertThat(tcbLastName).containsIgnoringCase("BROwn");
 
         Integer tcbTotalPrice = jsonPath.getInt("totalprice");
         assertThat(tcbTotalPrice).isNotNull().isNotNegative().isNotZero();
@@ -133,7 +133,7 @@ public class testFullEndToEndTC {
         assertThat(tcbAdditionalNeeds).containsIgnoringCase("breakfast");
     }
 
-    @Test(dependsOnGroups = {"Authentication","BookingId"})
+    @Test(dependsOnGroups = {"PreExecution"}, priority = 4)
     public void testPartialUpdate (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path+"/"+bookingid);
@@ -155,7 +155,7 @@ public class testFullEndToEndTC {
         assertThat(tpuLastName).contains("Brown").isNotNull().isNotBlank();
     }
 
-    @Test
+    @Test(dependsOnMethods = "testPartialUpdate", priority = 5)
     public void testPartialUpdatedBooking (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path+"/"+bookingid);
@@ -192,7 +192,7 @@ public class testFullEndToEndTC {
         assertThat(tcbAdditionalNeeds).containsIgnoringCase("breakfast");
     }
 
-    @Test(dependsOnGroups = {"Authentication.BookingId"}, dependsOnMethods = "testPartialUpdate")
+    @Test(dependsOnGroups = {"PreExecution"}, priority = 6)
     public void testFullUpdate (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path+"/"+bookingid);
@@ -214,7 +214,7 @@ public class testFullEndToEndTC {
         assertThat(tfuLastName).contains("Crown").isNotNull().isNotBlank();
     }
 
-    @Test
+    @Test(dependsOnMethods = "testFullUpdate", priority = 7)
     public void testFullyUpdatedBooking (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path+"/"+bookingid);
@@ -242,16 +242,16 @@ public class testFullEndToEndTC {
         assertThat(tfubookingDates).isNotNull();
 
         String tfucheckin = jsonPath.getJsonObject("bookingdates.checkin");
-        assertThat(tfucheckin).isEqualTo("2018-01-01");
+        assertThat(tfucheckin).isEqualTo("2019-01-01");
 
         String tfucheckout = jsonPath.getJsonObject("bookingdates.checkout");
-        assertThat(tfucheckout).isEqualTo("2019-01-01");
+        assertThat(tfucheckout).isEqualTo("2020-01-01");
 
         String tfuAdditionalNeeds = jsonPath.getString("additionalneeds");
         assertThat(tfuAdditionalNeeds).containsIgnoringCase("breakfast");
     }
 
-    @Test(dependsOnGroups = {"Authentication.BookingId"}, dependsOnMethods = "testFullUpdate")
+    @Test(dependsOnGroups = {"PreExecution"}, priority = 8)
     public void testDeleteBooking (){
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path+"/"+bookingid);
@@ -269,7 +269,7 @@ public class testFullEndToEndTC {
         System.out.println("This is the response, when deleted existing Booking :: "+jsonPath);
     }
 
-    @Test
+    @Test(dependsOnMethods = "testDeleteBooking", priority = 9)
     public void testDeletedBookingInfo () {
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path + "/" + bookingid);

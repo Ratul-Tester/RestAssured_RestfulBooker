@@ -5,11 +5,11 @@
           name="C:/Users/Ratul's Lappy/IdeaProjects/RestAssured_RestfulBooker/src/test/java/com/restassuredrestfulbooker/CRUDoperations/D/PriorityExamples/Lab278.java">
         <classes>
             <class name="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab278">
-                <methods>
-                    <include name="testMethodOne"/>
-                    <include name="testMethodTwo"/>
-                    <include name="testMethodThree"/>
-                </methods>
+<!--                <methods>-->
+<!--                    <include name="testMethodOne"/>-->
+<!--                    <include name="testMethodTwo"/>-->
+<!--                    <include name="testMethodThree"/>-->
+<!--                </methods>-->
             </class>
         </classes>
     </test>

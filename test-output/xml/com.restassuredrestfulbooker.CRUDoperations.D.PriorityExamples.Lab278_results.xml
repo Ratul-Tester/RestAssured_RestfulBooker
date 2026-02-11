@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="C:/Users/Ratul's Lappy/IdeaProjects/RestAssured_RestfulBooker/src/test/java/com/restassuredrestfulbooker/CRUDoperations/D/PriorityExamples/Lab278.java"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.350">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testMethodTwo"
+                time="0.016"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab278">
+            </testcase>
+            <testcase
+                name="testMethodOne"
+                time="0.326"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab278">
+            </testcase>
+            <testcase
+                name="testMethodThree"
+                time="0.008"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab278">
+            </testcase>
+</testsuite>

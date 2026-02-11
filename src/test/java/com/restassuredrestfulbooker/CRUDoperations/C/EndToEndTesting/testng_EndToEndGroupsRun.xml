@@ -5,13 +5,12 @@
           name="restassuredrestfulbooker/CRUDoperations">
         <groups>
             <run>
-                <include name="Authentication"> </include>
-                <include name="BookingId"> </include>
+                <include name="PreExecution"> </include>
             </run>
         </groups>
+
         <classes>
             <class name="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC"> </class>
         </classes>
-
     </test>
 </suite>
