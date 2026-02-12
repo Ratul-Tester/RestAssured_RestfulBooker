@@ -4,24 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.350">
+           time="0.040">
     <properties></properties>
 
 
 
             <testcase
-                name="testMethodTwo"
-                time="0.016"
-                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab278">
-            </testcase>
-            <testcase
                 name="testMethodOne"
-                time="0.326"
+                time="0.036"
                 classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab278">
             </testcase>
             <testcase
                 name="testMethodThree"
-                time="0.008"
+                time="0.002"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab278">
+            </testcase>
+            <testcase
+                name="testMethodTwo"
+                time="0.002"
                 classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab278">
             </testcase>
 </testsuite>
