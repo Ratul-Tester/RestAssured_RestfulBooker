@@ -1,16 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true"
-          name="C:/Users/Ratul's Lappy/IdeaProjects/RestAssured_RestfulBooker/src/test/java/com/restassuredrestfulbooker/CRUDoperations/D/PriorityExamples/Lab278.java">
-        <classes>
-            <class name="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab278">
-                <methods>
-                    <include name="testMethodOne"/>
-                    <include name="testMethodTwo"/>
-                    <include name="testMethodThree"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-</suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/BIOTECH/RestAssured_RestfulBooker/RestAssured_RestfulBooker/src/test/java/com/restassuredrestfulbooker/CRUDoperations/D/PriorityExamples/Lab279.java"><classes/></test></suite>

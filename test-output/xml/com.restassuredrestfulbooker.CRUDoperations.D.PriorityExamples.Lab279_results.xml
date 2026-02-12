@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PriorityExamples"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.045">
+    <properties></properties>
+
+
+
+            <testcase
+                name="QARun"
+                time="0.001"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab279">
+            </testcase>
+            <testcase
+                name="SanityPart2Run"
+                time="0.001"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab279">
+            </testcase>
+            <testcase
+                name="SanityPart1Run"
+                time="0.002"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab279">
+            </testcase>
+            <testcase
+                name="RegressionRun"
+                time="0.001"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab279">
+            </testcase>
+            <testcase
+                name="SmokeRun"
+                time="0.003"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab279">
+            </testcase>
+            <testcase
+                name="ProductionRun"
+                time="0.037"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab279">
+            </testcase>
+</testsuite>
