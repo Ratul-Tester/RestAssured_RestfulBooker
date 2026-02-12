@@ -2,10 +2,13 @@ package com.restassuredrestfulbooker.Miscellaneous;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class testEndToEnd {
     String Base_Url = "https://restful-booker.herokuapp.com";
@@ -49,7 +52,7 @@ public class testEndToEnd {
     ValidatableResponse vr;
 
     @Test(priority = 1)
-    public void testCreateToken (){
+    public void testCreateToken() {
         rs.baseUri(Base_Url);
         rs.basePath(Auth_Base_Path);
         rs.contentType(ContentType.JSON);
@@ -60,5 +63,42 @@ public class testEndToEnd {
         vr = r.then().log().all().statusCode(200);
 
         token = r.then().extract().path("token");
+
+        System.out.println("Extracted Token is :: " + token);
+
+        String authResponse = r.asString();
+
+        JsonPath jsonPath = new JsonPath(authResponse);
+        token = jsonPath.getString("token");
+
+        assertThat(token).isAlphanumeric().isNotNull();
+
+        System.out.println("Assert Token is :: " + token);
+    }
+
+    @Test(priority = 2)
+    public void testCreateBooking() {
+        rs.baseUri(Base_Url);
+        rs.basePath(Base_Path);
+        rs.contentType(ContentType.JSON);
+        rs.body(CreateBooking_Payload);
+
+        r = rs.when().log().all().post();
+
+        vr = r.then().log().all().statusCode(200);
+
+        bookingid = r.then().extract().path("bookingid");
+
+        String bookingResponse = r.asString();
+
+        JsonPath jsonPath = new JsonPath(bookingResponse);
+        bookingid = jsonPath.getInt("bookingid");
+        String responseFirstName = jsonPath.getString("firstname");
+        System.out.println("First NAME is :: "+responseFirstName);
+
+        assertThat(bookingid).isNotNull().isNotNegative().isBetween(0, 9999);
+        assertThat(responseFirstName).isEqualTo("JiM");
+
+        System.out.println("Booking ID is :: " + bookingid);
     }
 }
