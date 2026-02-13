@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured_RestfulBooker"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.036">
+    <properties></properties>
+
+
+
+            <testcase
+                name="createBooking"
+                time="0.002"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab281">
+            </testcase>
+            <testcase
+                name="updateBooking"
+                time="0.001"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab281">
+            </testcase>
+            <testcase
+                name="getToken"
+                time="0.033"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab281">
+            </testcase>
+</testsuite>
