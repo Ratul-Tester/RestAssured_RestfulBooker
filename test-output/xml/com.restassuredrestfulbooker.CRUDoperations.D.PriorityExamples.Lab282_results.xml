@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PriorityExamples"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.412">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testBrowser"
+                time="0.412"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab282">
+            </testcase>
+</testsuite>
