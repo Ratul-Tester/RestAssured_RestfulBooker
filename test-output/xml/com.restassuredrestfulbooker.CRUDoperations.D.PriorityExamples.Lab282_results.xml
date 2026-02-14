@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.412">
+           time="0.042">
     <properties></properties>
 
 
 
             <testcase
                 name="testBrowser"
-                time="0.412"
+                time="0.042"
                 classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab282">
             </testcase>
 </testsuite>
