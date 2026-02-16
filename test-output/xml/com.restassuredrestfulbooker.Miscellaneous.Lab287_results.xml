@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured_RestfulBooker"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.047">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testDatas"
+                time="0.043"
+                classname="com.restassuredrestfulbooker.Miscellaneous.Lab287">
+            </testcase>
+            <testcase
+                name="testDatas"
+                time="0.002"
+                classname="com.restassuredrestfulbooker.Miscellaneous.Lab287">
+            </testcase>
+            <testcase
+                name="testDatas"
+                time="0.002"
+                classname="com.restassuredrestfulbooker.Miscellaneous.Lab287">
+            </testcase>
+</testsuite>
