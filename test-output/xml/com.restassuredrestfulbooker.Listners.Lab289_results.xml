@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured_RestfulBooker"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.055">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testDemo1"
+                time="0.053"
+                classname="com.restassuredrestfulbooker.Listners.Lab289">
+            </testcase>
+            <testcase
+                name="testDemo2"
+                time="0.002"
+                classname="com.restassuredrestfulbooker.Listners.Lab289">
+            </testcase>
+</testsuite>
