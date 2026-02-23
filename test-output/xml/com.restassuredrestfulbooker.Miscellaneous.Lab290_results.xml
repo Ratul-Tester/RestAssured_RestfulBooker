@@ -4,12 +4,12 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="2.919">
+           time="13.868">
     <properties></properties>
 
             <testcase
                 name="testDatas"
-                time="2.919"
+                time="13.868"
                 classname="com.restassuredrestfulbooker.Miscellaneous.Lab290">
 
             <failure type="java.lang.AssertionError" message="1 expectation failed.
