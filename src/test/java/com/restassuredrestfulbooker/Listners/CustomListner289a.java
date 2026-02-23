@@ -2,7 +2,26 @@ package com.restassuredrestfulbooker.Listners;
 
 import org.testng.*;
 
-public class CustomListner289a implements ISuiteListener, ITestListener, IClassListener, IInvokedMethodListener {
+public class CustomListner289a implements ISuiteListener, ITestListener, IClassListener, IInvokedMethodListener, IExecutionListener {
+
+    @Override
+    public void onExecutionStart() {
+        IExecutionListener.super.onExecutionStart();
+        System.out.println("onExecutionStart");
+        long startTime= System.currentTimeMillis();
+        System.out.println(" ****   *** Started execution at - "+ startTime + "****   *** ");
+
+    }
+
+    @Override
+    public void onExecutionFinish() {
+        IExecutionListener.super.onExecutionFinish();
+        System.out.println("onExecutionFinish");
+        long endTime= System.currentTimeMillis();
+        System.out.println(" ****   *** Finished execution at - "+ endTime + "****   *** ");
+
+    }
+
     @Override
     public void onBeforeClass(ITestClass testClass) {
         IClassListener.super.onBeforeClass(testClass);
@@ -36,11 +55,17 @@ public class CustomListner289a implements ISuiteListener, ITestListener, IClassL
     @Override
     public void onStart(ISuite suite) {
         ISuiteListener.super.onStart(suite);
+        System.out.println("onSuiteStart");
+        long suiteStartTime= System.currentTimeMillis();
+        System.out.println(" ****   *** Started Suite at - "+ suiteStartTime + "****   *** ");
     }
 
     @Override
     public void onFinish(ISuite suite) {
         ISuiteListener.super.onFinish(suite);
+        System.out.println("onSuiteFinish");
+        long suiteFinishTime= System.currentTimeMillis();
+        System.out.println(" ****   *** Finished Suite at - "+ suiteFinishTime + "****   *** ");
     }
 
     @Override

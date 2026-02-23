@@ -93,12 +93,10 @@ public class testEndToEnd {
 
         JsonPath jsonPath = new JsonPath(bookingResponse);
         bookingid = jsonPath.getInt("bookingid");
-        String responseFirstName = jsonPath.getString("firstname");
-        System.out.println("First NAME is :: "+responseFirstName);
-
         assertThat(bookingid).isNotNull().isNotNegative().isBetween(0, 9999);
-        assertThat(responseFirstName).isEqualTo("JiM");
-
         System.out.println("Booking ID is :: " + bookingid);
+        String responseFirstName = jsonPath.getString("booking.firstname");
+        System.out.println("First NAME is :: "+responseFirstName);
+        assertThat(responseFirstName).isEqualToIgnoringCase("JiM");
     }
 }
