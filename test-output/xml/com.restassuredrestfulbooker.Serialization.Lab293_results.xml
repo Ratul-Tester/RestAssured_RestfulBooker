@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.905">
+           time="3.920">
     <properties></properties>
 
 
 
             <testcase
                 name="postMethodNegativeTC"
-                time="2.658"
-                classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.POST.NonBDDStyle.postMethodNonBDDStyle">
+                time="1.239"
+                classname="com.restassuredrestfulbooker.Serialization.Lab293">
             </testcase>
             <testcase
                 name="postMethodPositiveTC"
-                time="1.247"
-                classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.POST.NonBDDStyle.postMethodNonBDDStyle">
+                time="2.681"
+                classname="com.restassuredrestfulbooker.Serialization.Lab293">
             </testcase>
 </testsuite>
