@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured_RestfulBooker"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.425">
+    <properties></properties>
+
+
+
+            <testcase
+                name="createNegativeBooking"
+                time="2.158"
+                classname="com.restassuredrestfulbooker.Serialization.Lab295">
+            </testcase>
+            <testcase
+                name="createPositiveBooking"
+                time="1.267"
+                classname="com.restassuredrestfulbooker.Serialization.Lab295">
+            </testcase>
+</testsuite>
