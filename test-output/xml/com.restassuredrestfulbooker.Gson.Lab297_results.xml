@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured_RestfulBooker"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.338">
+    <properties></properties>
+
+
+
+            <testcase
+                name="createBooking"
+                time="2.338"
+                classname="com.restassuredrestfulbooker.Gson.Lab297">
+            </testcase>
+</testsuite>
