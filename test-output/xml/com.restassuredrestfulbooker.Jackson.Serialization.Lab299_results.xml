@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="2.321">
+           time="0.154">
     <properties></properties>
 
 
 
             <testcase
-                name="createBooking"
-                time="2.321"
-                classname="com.restassuredrestfulbooker.Gson.Lab297">
+                name="JacksonSerialization"
+                time="0.154"
+                classname="com.restassuredrestfulbooker.Jackson.Serialization.Lab299">
             </testcase>
 </testsuite>

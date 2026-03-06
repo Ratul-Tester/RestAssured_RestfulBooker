@@ -1,5 +1,6 @@
 package com.restassuredrestfulbooker.MunaJackson.MunaSerialization;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.restassuredrestfulbooker.MunaJackson.MunaBookingClass;
 import com.restassuredrestfulbooker.MunaJackson.MuniBookingDatesClass;
 import org.testng.annotations.Test;
@@ -23,6 +24,6 @@ public class Lab301 {
 
         System.out.println("The Object String is : "+munaBooking);
 
-
+        ObjectMapper objectMapper = new ObjectMapper();
     }
 }
