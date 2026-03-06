@@ -1,8 +1,9 @@
-package com.restassuredrestfulbooker.Gson;
+package com.restassuredrestfulbooker.Deserialization;
 
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.restassuredrestfulbooker.Gson.Bookingdates;
 
 
 public class Booking {

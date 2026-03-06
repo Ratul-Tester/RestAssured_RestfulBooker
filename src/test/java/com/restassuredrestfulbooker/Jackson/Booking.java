@@ -1,4 +1,4 @@
-package com.restassuredrestfulbooker.Gson;
+package com.restassuredrestfulbooker.Jackson;
 
 
 import com.google.gson.annotations.Expose;

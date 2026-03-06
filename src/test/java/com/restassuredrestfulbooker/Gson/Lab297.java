@@ -35,7 +35,11 @@ public class Lab297 {
         String jsonString = gson.toJson(booking);
         //System.out.println(jsonString);
 
-        System.out.println("THIS IS THAT : "+jsonString);
+        System.out.println("THIS IS THAT JSON STRING BOOKING : "+jsonString);
+
+        Payload = jsonString.toString();
+
+        System.out.println("THIS IS THAT PAYLOAD STRING BOOKING : "+Payload);
 
         rs.baseUri(Base_Url);
         rs.basePath(Base_Path);
@@ -45,6 +49,5 @@ public class Lab297 {
         r = rs.when().log().all().post();
 
         vr = r.then().log().all().statusCode(200);
-
     }
 }
