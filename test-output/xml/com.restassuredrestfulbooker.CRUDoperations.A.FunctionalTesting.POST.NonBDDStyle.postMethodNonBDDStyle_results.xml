@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.905">
+           time="2.479">
     <properties></properties>
 
 
 
             <testcase
                 name="postMethodNegativeTC"
-                time="2.658"
+                time="1.215"
                 classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.POST.NonBDDStyle.postMethodNonBDDStyle">
             </testcase>
             <testcase
                 name="postMethodPositiveTC"
-                time="1.247"
+                time="1.264"
                 classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.POST.NonBDDStyle.postMethodNonBDDStyle">
             </testcase>
 </testsuite>

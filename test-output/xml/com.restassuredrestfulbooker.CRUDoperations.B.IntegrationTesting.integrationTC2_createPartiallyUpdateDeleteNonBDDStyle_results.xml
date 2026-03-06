@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.636">
+           time="2.644">
     <properties></properties>
 
 
 
             <testcase
-                name="partiallyUpdateBooking"
-                time="3.480"
+                name="deleteBooking"
+                time="1.359"
                 classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC2_createPartiallyUpdateDeleteNonBDDStyle">
             </testcase>
             <testcase
-                name="deleteBooking"
-                time="2.156"
+                name="partiallyUpdateBooking"
+                time="1.285"
                 classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC2_createPartiallyUpdateDeleteNonBDDStyle">
             </testcase>
 </testsuite>

@@ -4,29 +4,29 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.401">
+           time="0.005">
     <properties></properties>
 
 
 
             <testcase
                 name="getBookingId"
-                time="0.011"
-                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab280">
-            </testcase>
-            <testcase
-                name="UpdateBooking"
-                time="0.013"
-                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab280">
-            </testcase>
-            <testcase
-                name="CheckUpdateBooking"
-                time="0.016"
+                time="0.002"
                 classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab280">
             </testcase>
             <testcase
                 name="getToken"
-                time="0.361"
+                time="0.001"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab280">
+            </testcase>
+            <testcase
+                name="CheckUpdateBooking"
+                time="0.001"
+                classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab280">
+            </testcase>
+            <testcase
+                name="UpdateBooking"
+                time="0.001"
                 classname="com.restassuredrestfulbooker.CRUDoperations.D.PriorityExamples.Lab280">
             </testcase>
 </testsuite>

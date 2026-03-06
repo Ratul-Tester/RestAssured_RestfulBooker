@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.905">
+           time="2.630">
     <properties></properties>
 
 
 
             <testcase
-                name="testCreateToken"
-                time="2.555"
+                name="testCreateBooking"
+                time="1.357"
                 classname="com.restassuredrestfulbooker.Miscellaneous.testEndToEnd">
             </testcase>
             <testcase
-                name="testCreateBooking"
-                time="1.350"
+                name="testCreateToken"
+                time="1.273"
                 classname="com.restassuredrestfulbooker.Miscellaneous.testEndToEnd">
             </testcase>
 </testsuite>

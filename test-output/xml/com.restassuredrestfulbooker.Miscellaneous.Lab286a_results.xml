@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.045">
+           time="0.004">
     <properties></properties>
 
 
 
             <testcase
                 name="getData"
-                time="0.002"
+                time="0.001"
                 classname="com.restassuredrestfulbooker.Miscellaneous.Lab286a">
             </testcase>
             <testcase
@@ -21,7 +21,7 @@
             </testcase>
             <testcase
                 name="getData"
-                time="0.041"
+                time="0.001"
                 classname="com.restassuredrestfulbooker.Miscellaneous.Lab286a">
             </testcase>
 </testsuite>

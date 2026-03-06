@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="2.930">
+           time="1.248">
     <properties></properties>
 
 
 
             <testcase
                 name="generating_Auth"
-                time="2.930"
+                time="1.248"
                 classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.AUTH.NonBDDStyle.creatingAuthTokenNonBDDStyleMethodPOST">
             </testcase>
 </testsuite>

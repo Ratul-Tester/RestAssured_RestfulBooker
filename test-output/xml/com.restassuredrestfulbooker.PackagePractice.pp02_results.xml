@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="restassuredrestfulbooker/CRUDoperations"
+<testsuite name="RestAssured_RestfulBooker"
            tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="4.422">
+           time="2.552">
     <properties></properties>
 
 
 
             <testcase
-                name="Step3"
-                time="2.138"
+                name="Step1"
+                time="0.002"
                 classname="com.restassuredrestfulbooker.PackagePractice.pp02">
             </testcase>
             <testcase
-                name="Step1"
-                time="0.005"
+                name="Step3"
+                time="1.282"
                 classname="com.restassuredrestfulbooker.PackagePractice.pp02">
             </testcase>
             <testcase
                 name="Step2"
-                time="2.279"
+                time="1.268"
                 classname="com.restassuredrestfulbooker.PackagePractice.pp02">
             </testcase>
 </testsuite>

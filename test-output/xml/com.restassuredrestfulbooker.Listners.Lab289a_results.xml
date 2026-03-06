@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.039">
+           time="0.001">
     <properties></properties>
 
 
 
             <testcase
                 name="steps"
-                time="0.039"
+                time="0.001"
                 classname="com.restassuredrestfulbooker.Listners.Lab289a">
             </testcase>
 </testsuite>

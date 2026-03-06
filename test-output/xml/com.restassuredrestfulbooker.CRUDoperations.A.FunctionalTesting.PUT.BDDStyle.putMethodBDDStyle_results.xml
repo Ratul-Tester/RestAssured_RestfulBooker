@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="restassuredrestfulbooker/CRUDoperations"
+<testsuite name="RestAssured_RestfulBooker"
            tests="2"
            failures="2"
            errors="0"
            skipped="0"
-           time="4.274">
+           time="2.479">
     <properties></properties>
 
             <testcase
                 name="updateBookingPutMethodNegativeTC"
-                time="2.241"
+                time="1.239"
                 classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.PUT.BDDStyle.putMethodBDDStyle">
 
             <failure type="java.lang.AssertionError" message="1 expectation failed.
@@ -24,7 +24,7 @@ Expected status code <500> but was <403>.
     </testcase>
             <testcase
                 name="updateBookingPutMethodPositiveTC"
-                time="2.033"
+                time="1.240"
                 classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.PUT.BDDStyle.putMethodBDDStyle">
 
             <failure type="java.lang.AssertionError" message="1 expectation failed.

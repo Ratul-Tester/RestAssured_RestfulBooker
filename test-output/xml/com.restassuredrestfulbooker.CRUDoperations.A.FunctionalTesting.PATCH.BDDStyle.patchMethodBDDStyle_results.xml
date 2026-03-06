@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="restassuredrestfulbooker/CRUDoperations"
+<testsuite name="RestAssured_RestfulBooker"
            tests="1"
            failures="1"
            errors="0"
            skipped="0"
-           time="2.492">
+           time="1.258">
     <properties></properties>
 
             <testcase
                 name="patchMethodPositiveTC"
-                time="2.492"
+                time="1.258"
                 classname="com.restassuredrestfulbooker.CRUDoperations.A.FunctionalTesting.PATCH.BDDStyle.patchMethodBDDStyle">
 
             <failure type="java.lang.AssertionError" message="1 expectation failed.

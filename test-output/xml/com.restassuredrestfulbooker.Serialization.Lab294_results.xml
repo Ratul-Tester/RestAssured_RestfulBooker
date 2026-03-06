@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="9.263">
+           time="2.520">
     <properties></properties>
 
 
 
             <testcase
                 name="postMethodNegativeTC"
-                time="8.037"
+                time="1.254"
                 classname="com.restassuredrestfulbooker.Serialization.Lab294">
             </testcase>
             <testcase
                 name="postMethodPositiveTC"
-                time="1.226"
+                time="1.266"
                 classname="com.restassuredrestfulbooker.Serialization.Lab294">
             </testcase>
 </testsuite>

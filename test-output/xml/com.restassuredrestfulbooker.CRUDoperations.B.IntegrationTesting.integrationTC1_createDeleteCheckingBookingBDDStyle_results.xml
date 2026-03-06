@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="restassuredrestfulbooker/CRUDoperations"
+<testsuite name="RestAssured_RestfulBooker"
            tests="4"
            failures="0"
            errors="0"
            skipped="0"
-           time="8.670">
+           time="4.947">
     <properties></properties>
 
 
 
             <testcase
+                name="generatingAuth"
+                time="1.255"
+                classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
+            </testcase>
+            <testcase
                 name="checkDeletedBookingGETMethodBDDStylePositiveTC"
-                time="2.159"
+                time="1.201"
                 classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
             </testcase>
             <testcase
                 name="createBookingIdMethodPostPositiveTC"
-                time="2.108"
+                time="1.235"
                 classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
             </testcase>
             <testcase
                 name="deleteMethodBDDStylePositiveTC"
-                time="2.152"
-                classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
-            </testcase>
-            <testcase
-                name="generatingAuth"
-                time="2.251"
+                time="1.256"
                 classname="com.restassuredrestfulbooker.CRUDoperations.B.IntegrationTesting.integrationTC1_createDeleteCheckingBookingBDDStyle">
             </testcase>
 </testsuite>

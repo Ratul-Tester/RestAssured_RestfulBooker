@@ -4,54 +4,54 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="31.742">
+           time="11.523">
     <properties></properties>
 
 
 
             <testcase
-                name="testCreatedBooking"
-                time="2.605"
-                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
-            </testcase>
-            <testcase
-                name="testAuthToGetToken"
-                time="13.244"
-                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
-            </testcase>
-            <testcase
-                name="testFullyUpdatedBooking"
-                time="2.348"
-                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
-            </testcase>
-            <testcase
                 name="testPartialUpdate"
-                time="2.452"
-                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
-            </testcase>
-            <testcase
-                name="testPartialUpdatedBooking"
-                time="2.399"
-                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
-            </testcase>
-            <testcase
-                name="testFullUpdate"
-                time="2.389"
-                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
-            </testcase>
-            <testcase
-                name="testDeleteBooking"
-                time="2.044"
-                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
-            </testcase>
-            <testcase
-                name="testBookingToGetBookingId"
-                time="2.233"
+                time="1.290"
                 classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
             </testcase>
             <testcase
                 name="testDeletedBookingInfo"
-                time="2.028"
+                time="1.218"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
+            </testcase>
+            <testcase
+                name="testCreatedBooking"
+                time="1.301"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
+            </testcase>
+            <testcase
+                name="testDeleteBooking"
+                time="1.315"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
+            </testcase>
+            <testcase
+                name="testPartialUpdatedBooking"
+                time="1.293"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
+            </testcase>
+            <testcase
+                name="testFullUpdate"
+                time="1.242"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
+            </testcase>
+            <testcase
+                name="testAuthToGetToken"
+                time="1.329"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
+            </testcase>
+            <testcase
+                name="testBookingToGetBookingId"
+                time="1.248"
+                classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
+            </testcase>
+            <testcase
+                name="testFullyUpdatedBooking"
+                time="1.287"
                 classname="com.restassuredrestfulbooker.CRUDoperations.C.EndToEndTesting.testFullEndToEndTC">
             </testcase>
 </testsuite>

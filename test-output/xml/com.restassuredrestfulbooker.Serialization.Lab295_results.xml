@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.425">
+           time="2.549">
     <properties></properties>
 
 
 
             <testcase
                 name="createNegativeBooking"
-                time="2.158"
+                time="1.271"
                 classname="com.restassuredrestfulbooker.Serialization.Lab295">
             </testcase>
             <testcase
                 name="createPositiveBooking"
-                time="1.267"
+                time="1.278"
                 classname="com.restassuredrestfulbooker.Serialization.Lab295">
             </testcase>
 </testsuite>
