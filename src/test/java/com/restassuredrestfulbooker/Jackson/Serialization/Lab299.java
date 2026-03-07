@@ -23,7 +23,7 @@ public class Lab299 {
         booking.setBookingdates(bookingdates);
         booking.setAdditionalneeds("Breakfast");
 
-        System.out.println("This is that : "+booking);
+        System.out.println("This is that : "+booking.toString());
 
         ObjectMapper objectMapper = new ObjectMapper();
         String jsonString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(booking);

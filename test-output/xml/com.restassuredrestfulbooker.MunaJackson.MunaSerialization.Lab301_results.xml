@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.003">
+           time="0.161">
     <properties></properties>
 
 
 
             <testcase
                 name="Object2JsonString"
-                time="0.003"
+                time="0.161"
                 classname="com.restassuredrestfulbooker.MunaJackson.MunaSerialization.Lab301">
             </testcase>
 </testsuite>
