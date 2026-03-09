@@ -29,5 +29,7 @@ public class Lab299 {
         String jsonString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(booking);
 
         System.out.println("This is that new Json String : "+jsonString);
+        System.out.println(jsonString.contains("Shiv"));
+        System.out.println(jsonString.contains("Sambhu"));
     }
 }

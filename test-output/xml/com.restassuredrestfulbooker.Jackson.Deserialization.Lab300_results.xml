@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1.358">
+           time="0.856">
     <properties></properties>
 
 
 
             <testcase
-                name="JacksonSerialization"
-                time="1.358"
-                classname="com.restassuredrestfulbooker.Jackson.Serialization.Lab299">
+                name="JsonStringToObject"
+                time="0.856"
+                classname="com.restassuredrestfulbooker.Jackson.Deserialization.Lab300">
             </testcase>
 </testsuite>
