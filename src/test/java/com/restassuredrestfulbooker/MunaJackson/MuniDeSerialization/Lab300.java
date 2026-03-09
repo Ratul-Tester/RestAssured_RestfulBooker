@@ -1,8 +1,14 @@
 package com.restassuredrestfulbooker.MunaJackson.MuniDeSerialization;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.restassuredrestfulbooker.MunaJackson.MunaBookingClass;
+import org.testng.annotations.Test;
+
 public class Lab300 {
 
-    public void JsonStringToObject(){
+    @Test
+    public void JsonStringToObject() throws JsonProcessingException {
 
         String Payload = "{\n" +
                 "    \"firstname\" : \"Raty\",\n" +
@@ -16,7 +22,10 @@ public class Lab300 {
                 "    \"additionalneeds\" : \"Breakfast\"\n" +
                 "}";
 
-
-
+        ObjectMapper objectMapper = new ObjectMapper();
+        MunaBookingClass booking = objectMapper.readValue(Payload, MunaBookingClass.class);
+        System.out.println("This is that conversion : "+booking);
+        System.out.println(booking.getFirstname());
+        System.out.println(booking.getLastname());
     }
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestAssured_RestfulBooker"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.153">
+    <properties></properties>
+
+
+
+            <testcase
+                name="JsonStringToObject"
+                time="0.153"
+                classname="com.restassuredrestfulbooker.MunaJackson.MuniDeSerialization.Lab300">
+            </testcase>
+</testsuite>
